@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rtomgt</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">abc123</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+
+		<property name="hibernate.c3p0.min_size">10</property>
+		<property name="hibernate.c3p0.max_size">100</property>
+		<property name="hibernate.c3p0.acquire_increment">10</property>
+		<property name="hibernate.c3p0.timeout">10</property>
+		<property name="hibernate.c3p0.">10</property>
+
+
+		<mapping class="com.rto.bean.UserBean" />
+		<mapping class="com.rto.bean.VehicleBean" />
+		<mapping class="com.rto.bean.LicenceBean" />
+
+
+
+	</session-factory>
+</hibernate-configuration>
